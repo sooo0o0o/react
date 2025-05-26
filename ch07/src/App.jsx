@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./App.css";
 import { User1Component } from "./components/user1/User1Component";
-import { BrowserRouter } from "react-router-dom";
 import { User2Component } from "./components/user2/User2Component";
 import { User3Component } from "./components/user3/User3Component";
 import { User4Component } from "./components/user4/User4Component";
@@ -19,13 +18,11 @@ function App() {
   return (
     <>
       <h3>ch07. React HTTP 통신</h3>
-      <BrowserRouter>
-        <User1Component />
-        <User2Component />
-        <User3Component />
-        <User4Component />
-        <User5Component />
-      </BrowserRouter>
+      <User1Component />
+      <User2Component />
+      <User3Component />
+      <User4Component />
+      <User5Component />
     </>
   );
 }
