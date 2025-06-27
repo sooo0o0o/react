@@ -13,7 +13,7 @@ export const User1List = () => {
   //마운트(렌더링) 되기전에 데이터 가져오기
   useEffect(() => {
     axios
-      .get("http://localhost:8080/ch09/user1")
+      .get("http://localhost:8081/ch09/user1")
       .then((response) => {
         console.log("here...2 : ");
         setUsers(response.data);
@@ -34,7 +34,7 @@ export const User1List = () => {
   //삭제하기
   const deleteHandler = (user) => {
     axios
-      .delete(`http://localhost:8080/ch09/user1/${user.uid}`) //컴포넌트 주소
+      .delete(`http://localhost:8081/ch09/user1/${user.uid}`) //컴포넌트 주소
       .then((response) => {
         console.log(response);
 

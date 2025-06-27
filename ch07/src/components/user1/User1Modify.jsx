@@ -21,7 +21,7 @@ export const User1Modify = () => {
   // 컴포넌트 Mount될 때  한번 호출
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/ch09/user1/${uid}`)
+      .get(`http://localhost:8081/ch09/user1/${uid}`)
       .then((response) => {
         console.log(response);
 
@@ -39,7 +39,7 @@ export const User1Modify = () => {
 
     // 서버 전송
     axios
-      .put("http://localhost:8080/ch09/user1", user)
+      .put("http://localhost:8081/ch09/user1", user)
       .then((response) => {
         console.log(response.data);
 

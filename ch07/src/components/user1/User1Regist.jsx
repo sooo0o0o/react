@@ -19,7 +19,7 @@ export const User1Regist = () => {
 
     //서버 전송 => "user" 가 실시간으로 업데이트 되는데 그걸 바로 post 주소로 보내는 것
     axios
-      .post("http://localhost:8080/ch09/user1", user)
+      .post("http://localhost:8081/ch09/user1", user)
       .then((response) => {
         console.log(response.data);
 
